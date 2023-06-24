@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+        
+    <div class="navbar">
+        <h1>Crypto World</h1>
+        <div>
+        <input class="searchbar" type="text" id="searchInput" placeholder="Search...">
+        <button class="searchBotton" onclick="search()">Search</button>
+        <button class="searchBotton" onclick="sort('market_cap')">Sort by Market Cap</button>
+        <button  class="searchBotton" onclick="sort('price_change_percentage')">Sort by % Change</button>
+    </div>
+      </div>
+      <table id="cryptoTable">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Volume</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    <script src="design.js"></script>
+</body>
+</html>
